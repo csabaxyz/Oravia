@@ -16,7 +16,7 @@ Use the form below to reach me for any reason: beta testing interest, feedback, 
 
 <div style="max-width: 600px; margin: 2rem auto;">
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/xaqpgqlw" method="POST">
 
   <div style="margin-bottom: 1.5rem;">
     <label style="display:block; font-weight:bold; margin-bottom:0.5rem; color:#4a9cd6;">Email or Discord handle</label>
