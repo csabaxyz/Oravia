@@ -1,6 +1,6 @@
 # Vocabulary List (beta)
 
-This is a beta version of the vocabulary list. Any changes such as deleted or edited words will ultimately depend on beta testers' feedback. At the moment, I think the total word list may get cut down to about 750 (whatever is not ultimately covered in the course, still in progress).  
+This is a beta version of the vocabulary list. Any changes such as deleted or edited words will ultimately depend on beta testers' feedback. At the moment, I think the total word list may get cut down to about 750 (keep only what is ultimately covered in the course, still in progress).  
 
 Search and filter all Oravia words. Click any column header to sort.  
 

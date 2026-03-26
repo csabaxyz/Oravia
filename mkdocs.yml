@@ -1,6 +1,7 @@
 site_name: Learn Oravia
-site_description: 
+site_description: Learn Oravia — a free constructed language course built around sound and meaning.
 site_author: Aline
+site_url: https://learnoravia.com
 
 theme:
   name: material
@@ -18,8 +19,6 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.sections
-    - navigation.expand
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -38,6 +37,7 @@ nav:
     - Vocabulary (beta): content/vocabulary.md
     - Building Blocks (beta): content/building_blocks.md
     - Grammar Reference (beta): content/oravia-grammar.md
+    - Readings: content/readings.md
   - Course:
     - L0 - Pronunciation & Structure: course/lesson00.md
     - Core:
@@ -113,19 +113,17 @@ plugins:
       lang: en
 
 extra:
-  version:
-    provider: mike
-  cache_buster: true  # Add this line
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/oravia-learn
+      link: https://github.com/AlineFrost/Oravia
       name: GitHub Repository
   generator: false
 
-copyright: Copyright &copy; 2025 Learn Oravia
+copyright: Copyright &copy; 2026 Learn Oravia
 
 extra_css:
   - css/custom.css
 
 extra_javascript:
   - js/matching-game.js
+

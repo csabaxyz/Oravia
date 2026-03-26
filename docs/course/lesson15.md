@@ -166,7 +166,7 @@
     | teva | 6 |
     | peri | 7 |
     | auta | 8 |
-    | teda | 9 |
+    | tenda | 9 |
     | das | 10 |
     
     Now try counting from 1 to 10! How about backwards, from 10 to 1? How about counting just the odd numbers, and then just the even numbers?
@@ -183,7 +183,7 @@
     
     Next, try saying 10, 20, 30, 40, 50, 60, 70, 80, 90. Tip: 40 is alem das and 80 is auta das. 
     
-    Great job, you can count to 99! Or should I say, *teda das teda?*
+    Great job, you can count to 99! Or should I say, *tenda das tenda?*
  
 
 === "Exercise 1"
