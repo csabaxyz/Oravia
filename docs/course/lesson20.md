@@ -19,22 +19,6 @@
     
     </div>
     
-    <div id="matching-section" style="display: none; margin-top: 3rem;">
-    
-    <h3>Practice Missed Words</h3>
-    <p style="color: #5a8bb8;">Let's practice the <span id="missed-count"></span> word(s) you're still learning. Give it a try!</p>
-    
-    <div id="warmup-game-1"></div>
-    
-    <div style="margin-top: 2rem;">
-    <div id="warmup-game-2"></div>
-    </div>
-    
-    <div style="text-align: center; margin-top: 2rem;">
-        <button id="back-to-assessment-btn" style="background: #757575; color: white; border: none; padding: 0.5rem 1.5rem; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">↩ Back to Assessment</button>
-    </div>
-    
-    </div>
     
 === "Grammar"
 
@@ -104,6 +88,10 @@
     
     Let's take a look at the **BE** Cluster! 
     
+    <audio controls style="width:100%">
+      <source src="../audio/20v.m4a" type="audio/mp4">
+    </audio>
+    
     | Oravia | English |
     |--------|---------|
     | bejae | luggage |
@@ -143,7 +131,12 @@
     !!! tip "Sound Connections"
         Take a look at the words in the **BEI** subcluster. Notice any syllables that you already know from previous vocabulary? What do they mean?
 
-    
+        
+    !!! info "🌍 Fun Fact"
+        Lem comes from Greek λῆμμα lēmma (something taken and kept).  
+        
+        Jui comes from Hindi/Urdu jugāṛ (makeshift, temporary fix).  
+        
     Now try to create 3 sentences using **BE** words:
     
     <textarea style="width: 100%; min-height: 80px; padding: 1rem; border: 2px solid #4a9cd6; border-radius: 8px; font-family: inherit;" placeholder="Write your sentences in Oravia here..."></textarea>
@@ -153,92 +146,105 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
-    
+
     ### Round 1
-    
+
     <div id="matching-game-1" data-lesson="lesson20" data-round="1"></div>
-    
+
     ---
-    
+
     ### Round 2
-    
+
     <div id="matching-game-2" data-lesson="lesson20" data-round="2"></div>
-    
+
     ---
-    
+
     ### Round 3
-    
+
     <div id="matching-game-3" data-lesson="lesson20" data-round="3"></div>
-    
+
     ---
-    
+
     ### Round 4
-    
+
     <div id="matching-game-4" data-lesson="lesson20" data-round="4"></div>
-    
+
     ---
-    
+
     ### Round 5
-    
+
     <div id="matching-game-5" data-lesson="lesson20" data-round="5"></div>
-    
-    
+
+    ---
+
+    ### Round 6
+
+    <div id="matching-game-6" data-lesson="lesson20" data-round="6"></div>
+
+    ---
+
+    ### Round 7
+
+    <div id="matching-game-7" data-lesson="lesson20" data-round="7"></div>
+
+
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
-    ---
-    
-    ### Round 1
-    
-    <div id="matching-game-7" data-lesson="lesson18" data-round="1"></div>
-    
-    ---
-    
-    ### Round 2
-    
-    <div id="matching-game-8" data-lesson="lesson18" data-round="2"></div>
-    
-    ---
-    
-    ### Round 3
-    
-    <div id="matching-game-9" data-lesson="lesson18" data-round="3"></div>
-    
-    ---
-    
-    ### Round 4
-    
-    <div id="matching-game-10" data-lesson="lesson18" data-round="4"></div>
-    
-    ---
-    
-    ### Round 5
-    
-    <div id="matching-game-11" data-lesson="lesson18" data-round="5"></div>
 
     ---
-    
+
+    ### Round 1
+
+    <div id="matching-game-8" data-lesson="lesson18" data-round="1"></div>
+
+    ---
+
+    ### Round 2
+
+    <div id="matching-game-9" data-lesson="lesson18" data-round="2"></div>
+
+    ---
+
+    ### Round 3
+
+    <div id="matching-game-10" data-lesson="lesson18" data-round="3"></div>
+
+    ---
+
+    ### Round 4
+
+    <div id="matching-game-11" data-lesson="lesson18" data-round="4"></div>
+
+    ---
+
+    ### Round 5
+
+    <div id="matching-game-12" data-lesson="lesson18" data-round="5"></div>
+
+    ---
+
     ### Round 6
-    
-    <div id="matching-game-12" data-lesson="lesson18" data-round="6"></div>
+
+    <div id="matching-game-13" data-lesson="lesson18" data-round="6"></div>
+
 
 
 === "Review"
@@ -255,13 +261,15 @@
 
 <script>
 function initWarmup() {
-    const warmupWords = [
-    {id: "il_a1", oravia: "ilace", english: "ask"},
-    {id: "il_a2", oravia: "ilahai", english: "talk"},
-    {id: "il_a3", oravia: "ilaluan", english: "say"},
-    {id: "il_i1", oravia: "ilian", english: "know"},
-    {id: "il_i2", oravia: "ilie", english: "maybe"},
-    {id: "il_i3", oravia: "iliro", english: "think"},
+            const warmupWords = [
+    {id: "il_1", oravia: "ilwol",   english: "thing"},
+    {id: "il_2", oravia: "ilhei",   english: "person"},
+    {id: "il_3", oravia: "ilace",   english: "ask"},
+    {id: "il_4", oravia: "ilaluan", english: "say"},
+    {id: "il_5", oravia: "ilian",   english: "know"},
+    {id: "il_6", oravia: "ilie",    english: "maybe"},
+    {id: "il_7", oravia: "ilonya",  english: "forget"},
+    {id: "il_8", oravia: "iloto",   english: "worry"},
     ];
 
     function renderSelfAssessment() {
@@ -298,20 +306,10 @@ function initWarmup() {
             }
             const existing = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
             localStorage.setItem('wrong_ids', JSON.stringify([...new Set([...existing, ...missedWords.map(w => w.id)])]));
-            document.getElementById('missed-count').textContent = missedWords.length;
-            document.getElementById('self-assessment-section').style.display = 'none';
-            document.getElementById('matching-section').style.display = 'block';
-            if (typeof MatchingGame !== 'undefined') {
-                new MatchingGame('warmup-game-1', missedWords, 'warmup-1', null, []);
-                new MatchingGame('warmup-game-2', missedWords, 'warmup-2', null, []);
-            }
+            document.getElementById('practice-btn').style.display = 'none';
+            document.getElementById('practice-btn').insertAdjacentHTML('afterend', '<p id="added-msg" style="color:#43a047; font-size:1rem; margin-top:1rem;">✓ Added to your Review tab!</p>');
         });
     }
-    const backBtn = document.getElementById('back-to-assessment-btn');
-    if (backBtn) backBtn.addEventListener('click', function() {
-        document.getElementById('matching-section').style.display = 'none';
-        document.getElementById('self-assessment-section').style.display = 'block';
-    });
     renderSelfAssessment();
 }
 if (document.readyState === 'loading') {

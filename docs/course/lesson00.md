@@ -14,7 +14,7 @@ To navigate the Lesson, please click the tabs below: "About the Course", "Pronun
 
     The **Fluency Course** finishes all the grammar, allowing you to express more nuance. After completing it, you will be able to talk about pretty much anything, and engage with different kinds of media. 
 
-    The **Extension Course** finishes all the vocabulary and unlocks more options for creativity, style, and personalization. After completing it, you will be able to create your own voice, play with all the language features, and contribute to Oravia's development.  
+    The **Extension Course** unlocks more options for creativity, style, and personalization. After completing it, you will be able to create your own voice, play with all the language features, and contribute to Oravia's development.  
 
     In total, there are 80 lessons of about 15 minutes each. Most learners will do best with 1 lesson a day. It doesn't sound like much, but learning a completely different language introduces new ways of thinking and communicating that your brain needs to get used to. Experienced language learners sometimes prefer 2-3 lessons a day if they want a faster pace.
 

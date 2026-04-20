@@ -39,12 +39,11 @@ All pronounced as you would expect in English or IPA, with the details of:
     
 If you pronounce E and O closed like in Spanish (IPA e and o), that's fine too!
 
-**Stress:** On the penultimate syllable, and if the word ends in consonant, on the last syllable.
+**Stress:** On the penultimate syllable.
 
-**Examples:**
+**Example:**
 
 - i**LI**ru
-- ili**RAN**
 
 ---
 

@@ -203,108 +203,69 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
+
     ### Round 1
+
     <div id="matching-game-1" data-lesson="lesson38_b" data-round="1"></div>
 
     ---
 
     ### Round 2
+
     <div id="matching-game-2" data-lesson="lesson38_b" data-round="2"></div>
 
     ---
 
     ### Round 3
+
     <div id="matching-game-3" data-lesson="lesson38_b" data-round="3"></div>
 
-    ---
-
-    ### Round 4
-    <div id="matching-game-4" data-lesson="lesson38_b" data-round="4"></div>
-
-    ---
-
-    ### Round 5
-    <div id="matching-game-5" data-lesson="lesson38_b" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-6" data-lesson="lesson38_b" data-round="6"></div>
-
-    ---
-
-    ### Round 7
-    <div id="matching-game-7" data-lesson="lesson38_b" data-round="7"></div>
-
-    ---
-
-    ### Round 8
-    <div id="matching-game-8" data-lesson="lesson38_b" data-round="8"></div>
-
-    ---
-
-    ### Round 9
-    <div id="matching-game-9" data-lesson="lesson38_b" data-round="9"></div>
-
-    ---
-
-    ### Round 10
-    <div id="matching-game-10" data-lesson="lesson38_b" data-round="10"></div>
 
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
+
     ### Round 1
-    <div id="matching-game-11" data-lesson="lesson36_exercise2" data-round="1"></div>
+
+    <div id="matching-game-4" data-lesson="lesson36_exercise2" data-round="1"></div>
 
     ---
 
     ### Round 2
-    <div id="matching-game-12" data-lesson="lesson36_exercise2" data-round="2"></div>
+
+    <div id="matching-game-5" data-lesson="lesson36_exercise2" data-round="2"></div>
 
     ---
 
     ### Round 3
-    <div id="matching-game-13" data-lesson="lesson36_exercise2" data-round="3"></div>
+
+    <div id="matching-game-6" data-lesson="lesson36_exercise2" data-round="3"></div>
 
     ---
 
     ### Round 4
-    <div id="matching-game-14" data-lesson="lesson36_exercise2" data-round="4"></div>
 
-    ---
+    <div id="matching-game-7" data-lesson="lesson36_exercise2" data-round="4"></div>
 
-    ### Round 5
-    <div id="matching-game-15" data-lesson="lesson36_exercise2" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-16" data-lesson="lesson36_exercise2" data-round="6"></div>
-
-    ---
-
-    ### Round 7
-    <div id="matching-game-17" data-lesson="lesson36_exercise2" data-round="7"></div>
 
 
 === "Review"
@@ -318,13 +279,14 @@
 
 <script>
 function initWarmup() {
-    const warmupWords = [
-    {id: "lu_l3", oravia: "lusari", english: "sun"},
-    {id: "lu_l4", oravia: "luyol", english: "sky"},
-    {id: "lu_n1", oravia: "lunsor", english: "autumn"},
-    {id: "lu_n2", oravia: "lunpili", english: "spring"},
-    {id: "lu_n3", oravia: "lunhem", english: "summer"},
-    {id: "lu_n4", oravia: "lunu", english: "winter"},
+        const warmupWords = [
+    {id: "lu_1", oravia: "lufiva", english: "cold"},
+    {id: "lu_2", oravia: "luyar",  english: "light"},
+    {id: "lu_3", oravia: "lupupi", english: "rain"},
+    {id: "lu_4", oravia: "luyol",  english: "sky"},
+    {id: "lu_5", oravia: "lusari", english: "sun"},
+    {id: "lu_6", oravia: "lunhem", english: "summer"},
+    {id: "lu_7", oravia: "lunu",   english: "winter"},
     ];
 
     function renderSelfAssessment() {

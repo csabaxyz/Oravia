@@ -33,7 +33,7 @@
     ```
     
     ```
-    e moanih i mo a run 
+    e moaria i mo a run 
     ```
     
     ```
@@ -54,14 +54,10 @@
     |--------|---------|
     | mogali | coffee |
     | mocen  | chocolate |
-    | moyam  | spice |
-    | moyi   | sugar, sweet |
-    | moval  | ice |
     | mouje  | drink |
     | moulu  | milk |
     | moaria | apple |
     | moalen  | banana |
-    | moanih | berry |
     
     | Singular | Plural |
     |----------|--------|
@@ -78,7 +74,7 @@
     </div>
     
     <div id="subcluster-answer" style="display: none; background: #c8e6c9; padding: 1.5rem; border-left: 4px solid #43a047; border-radius: 4px; margin: 2rem 0;">
-        <p style="margin: 0;"> Possible ways to translate:  You all eat the apple.  She drinks chocolate.  We drink coffee.  You eat berries.  They drink a drink.  I eat banana. </p>
+        <p style="margin: 0;"> Possible ways to translate:  You all eat the apple.  She drinks chocolate.  We drink coffee.  You eat apple.  They drink a drink.  I eat banana. </p>
     </div>
     
     Great job! Based on the sentences, we can see that:
@@ -147,9 +143,17 @@
         <p style="margin: 0;">That's right! FA words are related to <strong>family</strong>.</p>
     </div>
     
+    !!! info "🌍 Fun Fact"
+        Fa is like Latin familia, which is where the English word family comes from.  
+          
+        Parent uses the root re(l), which comes from Latin relevare (to lift, raise up). This is because parents are one generation above!  
+
+        
     Can you create 2 sentences using these words?  
     
     <textarea style="width: 100%; min-height: 80px; padding: 1rem; border: 2px solid #4a9cd6; border-radius: 8px; font-family: inherit;" placeholder="Write your sentences in Oravia here..."></textarea>
+    
+    You will now move into the exercise. We have been seeing a lot of new words, but some are more central than others. For this reason, some words will appear frequently and you will retain them better. Other words will appear less and you may forget what they mean. Don't worry about it! If you don't remember a word that appears in an exercise, check the tips on that same page. 
     
     ---
 
@@ -170,27 +174,25 @@
     ### Round 1
     
     <div id="matching-game-1" data-lesson="lesson03" data-round="1"></div>
-    
+
     ---
-    
+
     ### Round 2
     
     <div id="matching-game-2" data-lesson="lesson03" data-round="2"></div>
-    
+
     ---
-    
+
     ### Round 3
     
     <div id="matching-game-3" data-lesson="lesson03" data-round="3"></div>
-        
+
+
     ---
-    
+
     ### Round 4
     
     <div id="matching-game-4" data-lesson="lesson03" data-round="4"></div>
-    
-    ---
-    
 
 
 === "Review"
@@ -223,44 +225,33 @@ async function initReview() {
     const wrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
     const container = document.getElementById('review-game-container');
     if (!container) return;
-
     if (wrongIds.length === 0) {
         container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p><p style="color: #5a8bb8; margin-top: 0.5rem;">You did not miss any words. Excellent work!</p></div>';
         return;
     }
-
     try {
-        // Automatically detect all JSON files used on this page
         const lessonIds = [...new Set(
             [...document.querySelectorAll('[data-lesson]')]
                 .map(el => el.dataset.lesson)
         )];
-        
         const baseUrl = window.location.origin;
         const responses = await Promise.all(
             lessonIds.map(id => fetch(baseUrl + '/data/' + id + '_words.json').then(r => r.json()))
         );
         const allWords = responses.flatMap(data => data.words);
-
-        // Deduplicate by id
         const seen = new Set();
         const uniqueWords = allWords.filter(w => {
             if (seen.has(w.id)) return false;
             seen.add(w.id);
             return true;
         });
-
         const wrongWords = uniqueWords.filter(word => wrongIds.includes(word.id));
-
         if (wrongWords.length === 0) {
             container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p></div>';
             return;
         }
-
         container.innerHTML = '<p style="text-align: center; margin-bottom: 2rem; color: #5a8bb8;">Practice these ' + wrongWords.length + ' word(s) you found challenging:</p><div id="review-game-wrapper"></div><div style="text-align: center; margin-top: 2rem;"><button id="clear-review" style="padding: 0.5rem 1.5rem; background: #f57c00; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">Clear Review List</button></div>';
-
         new MatchingGame('review-game-wrapper', wrongWords, 'review', null, []);
-
         document.getElementById('clear-review').addEventListener('click', function() {
             if (confirm('Clear all review words? This will reset your wrong words list for this lesson.')) {
                 const allWrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
@@ -270,13 +261,11 @@ async function initReview() {
                 location.reload();
             }
         });
-
     } catch (error) {
         console.error('Error loading words:', error);
         container.innerHTML = '<p style="color: #f44336;">Error loading review words. Please refresh the page.</p>';
     }
 }
-
 document.addEventListener('DOMContentLoaded', initReview);
 document.querySelectorAll('.tabbed-labels label').forEach(label => {
     if (label.textContent.trim() === 'Review') {

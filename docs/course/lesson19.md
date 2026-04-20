@@ -1,7 +1,7 @@
 # Lesson 19: OI Cluster
 
 !!! info "How to Use This Lesson"
-    Every lesson is divided into five sections: **Warm-Up**, **Grammar**, **Vocabulary**, **Exercise**, and **Review**. Please move through these tabs in order.
+    Every lesson is divided into five sections: **Warm-Up**, **Grammar**, **Vocabulary**, **Exercise**, and **Review**. Please move through these tabs in order. 
     
     **Do not try to memorize!** Just read through the content attentively. We will have plenty of exercises and reviews later!
 
@@ -19,22 +19,6 @@
     
     </div>
     
-    <div id="matching-section" style="display: none; margin-top: 3rem;">
-    
-    <h3>Practice Missed Words</h3>
-    <p style="color: #5a8bb8;">Let's practice the <span id="missed-count"></span> word(s) you're still learning. Give it a try!</p>
-    
-    <div id="warmup-game-1"></div>
-    
-    <div style="margin-top: 2rem;">
-    <div id="warmup-game-2"></div>
-    </div>
-    
-    <div style="text-align: center; margin-top: 2rem;">
-        <button id="back-to-assessment-btn" style="background: #757575; color: white; border: none; padding: 0.5rem 1.5rem; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">↩ Back to Assessment</button>
-    </div>
-    
-    </div>
     
 === "Grammar"
 
@@ -56,6 +40,10 @@
     
     
      Now, see if you can understand these sentences. If you scroll bellow, you will see tips, and then answers. 
+     
+     <audio controls style="width:100%">
+      <source src="../audio/19g.m4a" type="audio/mp4">
+    </audio>
     
     ```
     nim i dairanum ca hay i anye.
@@ -141,6 +129,10 @@
     
     Let's take a look at the **OI Cluster**! 
     
+    <audio controls style="width:100%">
+      <source src="../audio/19v.m4a" type="audio/mp4">
+    </audio>
+    
     | Oravia | English |
     |--------|---------|
     | oifu | silly, trivial |
@@ -162,7 +154,12 @@
     <div id="subcluster4-answer" style="display: none; background: #c8e6c9; padding: 1.5rem; border-left: 4px solid #43a047; border-radius: 4px; margin: 2rem 0;">
     <p style="margin: 0;">The <strong>OI</strong> words are about <strong>fun!</strong> </p>
     </div>
-    
+        
+    !!! info "🌍 Fun Fact"
+        Poh is like Greek πῦρ (pyr = fire); PIE *péh₂ur (fire).  
+        
+        Across unrelated languages, "la" is an expression of happiness (Portuguese/Spanish/Italian la in song, Swahili la in joy expressions, English la-la, Hindi lā in lullabies).  
+        
     A lot of times people use these words as reactions, like this:
     ```
     Oipili! = cute!
@@ -192,86 +189,70 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
-    
+
     ### Round 1
-    
+
     <div id="matching-game-1" data-lesson="lesson18" data-round="1"></div>
-    
+
     ---
-    
+
     ### Round 2
-    
+
     <div id="matching-game-2" data-lesson="lesson18" data-round="2"></div>
-    
+
     ---
-    
+
     ### Round 3
-    
+
     <div id="matching-game-3" data-lesson="lesson18" data-round="3"></div>
-    
-    ---
-    
-    ### Round 4
-    
-    <div id="matching-game-4" data-lesson="lesson18" data-round="4"></div>
-    
-    ---
-    
-    ### Round 5
-    
-    <div id="matching-game-5" data-lesson="lesson18" data-round="5"></div>
-    
-    ---
-    
-    ### Round 6
-    
-    <div id="matching-game-6" data-lesson="lesson18" data-round="6"></div>
-    
-    
+
+
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
-    
+
     ### Round 1
-    
-    <div id="matching-game-7" data-lesson="lesson19_exercise2" data-round="1"></div>
-    
+
+    <div id="matching-game-4" data-lesson="lesson16" data-round="1"></div>
+
     ---
-    
+
     ### Round 2
-    
-    <div id="matching-game-8" data-lesson="lesson19_exercise2" data-round="2"></div>
-    
+
+    <div id="matching-game-5" data-lesson="lesson16" data-round="2"></div>
+
     ---
-    
+
     ### Round 3
-    
-    <div id="matching-game-9" data-lesson="lesson19_exercise2" data-round="3"></div>
-    
+
+    <div id="matching-game-6" data-lesson="lesson16" data-round="3"></div>
+
     ---
-    
+
     ### Round 4
-    
-    <div id="matching-game-10" data-lesson="lesson19_exercise2" data-round="4"></div>
+
+    <div id="matching-game-7" data-lesson="lesson16" data-round="4"></div>
+
+
 
 === "Review"
 
@@ -287,12 +268,13 @@
 
 <script>
 function initWarmup() {
-    const warmupWords = [
-    {id: "ya_007", oravia: "yahlul", english: "smooth"},
-    {id: "ya_008", oravia: "yahgor", english: "solid"},
-    {id: "ya_009", oravia: "yalou", english: "deep"},
-    {id: "ya_010", oravia: "yalen", english: "long"},
-    {id: "ya_011", oravia: "yaltan", english: "big"},
+        const warmupWords = [
+    {id: "eo_6", oravia: "eodenbor", english: "welcome"},
+    {id: "eo_5", oravia: "eomsu",    english: "party"},
+    {id: "eo_4", oravia: "eomio",    english: "support"},
+    {id: "eo_3", oravia: "eofa",     english: "friend"},
+    {id: "eo_2", oravia: "eori",     english: "please"},
+    {id: "eo_1", oravia: "eon",      english: "hello"},
     ];
 
     function renderSelfAssessment() {
@@ -329,20 +311,10 @@ function initWarmup() {
             }
             const existing = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
             localStorage.setItem('wrong_ids', JSON.stringify([...new Set([...existing, ...missedWords.map(w => w.id)])]));
-            document.getElementById('missed-count').textContent = missedWords.length;
-            document.getElementById('self-assessment-section').style.display = 'none';
-            document.getElementById('matching-section').style.display = 'block';
-            if (typeof MatchingGame !== 'undefined') {
-                new MatchingGame('warmup-game-1', missedWords, 'warmup-1', null, []);
-                new MatchingGame('warmup-game-2', missedWords, 'warmup-2', null, []);
-            }
+            document.getElementById('practice-btn').style.display = 'none';
+            document.getElementById('practice-btn').insertAdjacentHTML('afterend', '<p id="added-msg" style="color:#43a047; font-size:1rem; margin-top:1rem;">✓ Added to your Review tab!</p>');
         });
     }
-    const backBtn = document.getElementById('back-to-assessment-btn');
-    if (backBtn) backBtn.addEventListener('click', function() {
-        document.getElementById('matching-section').style.display = 'none';
-        document.getElementById('self-assessment-section').style.display = 'block';
-    });
     renderSelfAssessment();
 }
 if (document.readyState === 'loading') {

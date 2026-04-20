@@ -69,7 +69,7 @@ This is not the first language I've created, but it's the first I am sharing. Th
 **Oravia's approach:**
 A vocabulary that is larger than the minimalistic approach to allow more specificity and nuance, and expression of most concepts with only 1-2 words. At the same time, with about 800 words it is still one of the smallest languages. 
 
-Importantly, these words don't add as much cognitive load because of the syllable-meaning associations and the cluster semantic structure. They are much easier and faster to learn than arbitrary sounds. That way, we get the benefit of having a larger vocabulary than minimalistic languages, with less load than the (already small) raw number may suggest.
+Importantly, these words don't add as much cognitive load because of the syllable-meaning associations and the cluster semantic structure. Once you get a gist of the language, they are much easier and faster to learn than arbitrary sounds. That way, we get the benefit of having a larger vocabulary than minimalistic languages, with less load than the (already small) raw number may suggest.
 
 *Example*
 ```
@@ -97,7 +97,8 @@ nature  climate  seasons  heat
 - languages with completely made up words (a priori) may be more neutral, but they take longer to learn
 
 **Oravia's approach:**
-A priori vocabulary, which is more balanced to learners of multiple backgrounds. At the same time, words are not arbitrary sounds: the syllable-meaning associations, the cluster semantic structure, and the small vocabulary facilitate learning.
+Oravia was first constructed a priori, which is more fair. At the same time, words are not arbitrary sounds: the syllable-meaning associations, the cluster semantic structure, and the small vocabulary facilitate learning.  
+Oravia also has a posteriori characteristics: the word components were mapped into existing natural languages. For example, the root yun in Oravia is mist, which maps into Mandarin 云 yún (cloud, mist). These associations incorporate the advantages of learning etymology to mnemonics and memorization.
 
 *Example*
 ```

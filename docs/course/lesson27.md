@@ -1,7 +1,7 @@
 # Lesson 27: TO Cluster
 
 !!! info "How to Use This Lesson"
-    Every lesson is divided into five sections: **Warm-Up**, **Grammar**, **Vocabulary**, **Exercise**, and **Review**. Please move through these tabs in order. After you finish, *try the Exercises and Review again* to see how much you've improved.
+    Every lesson is divided into five sections: **Warm-Up**, **Grammar**, **Vocabulary**, **Exercise**, and **Review**. Please move through these tabs in order.
     
     **Do not try to memorize!** Just read through the content attentively. We will have plenty of exercises and reviews later!
 
@@ -19,22 +19,6 @@
     
     </div>
     
-    <div id="matching-section" style="display: none; margin-top: 3rem;">
-    
-    <h3>Practice Missed Words</h3>
-    <p style="color: #5a8bb8;">Let's practice the <span id="missed-count"></span> word(s) you're still learning. Give it a try!</p>
-    
-    <div id="warmup-game-1"></div>
-    
-    <div style="margin-top: 2rem;">
-    <div id="warmup-game-2"></div>
-    </div>
-    
-    <div style="text-align: center; margin-top: 2rem;">
-        <button id="back-to-assessment-btn" style="background: #757575; color: white; border: none; padding: 0.5rem 1.5rem; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">↩ Back to Assessment</button>
-    </div>
-    
-    </div>
     
 === "Grammar"
 
@@ -43,7 +27,7 @@
      See if you can understand these sentences. Some words or uses may be new. Try to read them first, and then scroll down for tips, and then answers. 
     
     ```
-    Notam i iliro, notor i ilahai.
+    Notam i ilace, notor i ilahai.
     ```
     
     ```
@@ -55,7 +39,7 @@
     ```
     
     ```
-    Notam runa i mo, i bospupi e molcui su molbai, eori.
+    Notam runa i mo, i bospupi e molcui, eori.
     ```
     
     ```
@@ -130,7 +114,7 @@
     
     What do you think the **TO** cluster is about? 
     
-    <div style="text-align: center; margin: 2rem 0;">
+        <div style="text-align: center; margin: 2rem 0;">
     <button onclick="document.getElementById('subcluster4-answer').style.display='block'; this.style.display='none';" style="background: #4a9cd6; color: white; border: none; padding: 0.75rem 2rem; border-radius: 4px; cursor: pointer;">
         Click to Reveal the Answer
     </button>
@@ -140,6 +124,13 @@
     <p style="margin: 0;"> It's about suffering and distress. </p>
     </div>
 
+    !!! info "🌍 Fun Fact"
+        Vei means "health issues", and comes from Sanskrit वैद्य vaidya (physician).
+        
+        Pu is like Persian پوچ pūc (emptiness, loss).  
+        
+        Wa is water, from the Polynesian root wai (water).
+        
     Now try to create 3 sentences using **TO** words:
     
     <textarea style="width: 100%; min-height: 80px; padding: 1rem; border: 2px solid #4a9cd6; border-radius: 8px; font-family: inherit;" placeholder="Write your sentences in Oravia here..."></textarea>
@@ -151,98 +142,69 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
+
     ### Round 1
+
     <div id="matching-game-1" data-lesson="lesson26_b" data-round="1"></div>
 
     ---
 
     ### Round 2
+
     <div id="matching-game-2" data-lesson="lesson26_b" data-round="2"></div>
 
     ---
 
     ### Round 3
+
     <div id="matching-game-3" data-lesson="lesson26_b" data-round="3"></div>
 
-    ---
-
-    ### Round 4
-    <div id="matching-game-4" data-lesson="lesson26_b" data-round="4"></div>
-
-    ---
-
-    ### Round 5
-    <div id="matching-game-5" data-lesson="lesson26_b" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-6" data-lesson="lesson26_b" data-round="6"></div>
-
-    ---
-
-    ### Round 7
-    <div id="matching-game-7" data-lesson="lesson26_b" data-round="7"></div>
-
-    ---
-
-    ### Round 8
-    <div id="matching-game-8" data-lesson="lesson26_b" data-round="8"></div>
-
-    ---
-
-    ### Round 9
-    <div id="matching-game-9" data-lesson="lesson26_b" data-round="9"></div>
 
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
+
     ### Round 1
-    <div id="matching-game-10" data-lesson="lesson24_exercise2" data-round="1"></div>
+
+    <div id="matching-game-4" data-lesson="lesson24_exercise2" data-round="1"></div>
 
     ---
 
     ### Round 2
-    <div id="matching-game-11" data-lesson="lesson24_exercise2" data-round="2"></div>
+
+    <div id="matching-game-5" data-lesson="lesson24_exercise2" data-round="2"></div>
 
     ---
 
     ### Round 3
-    <div id="matching-game-12" data-lesson="lesson24_exercise2" data-round="3"></div>
+
+    <div id="matching-game-6" data-lesson="lesson24_exercise2" data-round="3"></div>
 
     ---
 
     ### Round 4
-    <div id="matching-game-13" data-lesson="lesson24_exercise2" data-round="4"></div>
 
-    ---
+    <div id="matching-game-7" data-lesson="lesson24_exercise2" data-round="4"></div>
 
-    ### Round 5
-    <div id="matching-game-14" data-lesson="lesson24_exercise2" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-15" data-lesson="lesson24_exercise2" data-round="6"></div>
 
 
 === "Review"
@@ -256,14 +218,17 @@
 
 <script>
 function initWarmup() {
-    const warmupWords = [
-    {id: "li_p1", oravia: "limel", english: "evening"},
-    {id: "li_p2", oravia: "lipardas", english: "month"},
-    {id: "li_p3", oravia: "ligo", english: "half"},
-    {id: "li_p4", oravia: "linu", english: "until"},
-    {id: "li_p5", oravia: "liperi", english: "week"},
-    {id: "li_p6", oravia: "lidastor", english: "year"},
-    {id: "li_p7", oravia: "litetan", english: "hour"},
+        const warmupWords = [
+    {id: "li_10", oravia: "litegai",  english: "minute"},
+    {id: "li_6",  oravia: "lipardas", english: "month"},
+    {id: "li_1",  oravia: "litam",    english: "day"},
+    {id: "li_9",  oravia: "litetan",  english: "hour"},
+    {id: "li_4",  oravia: "lilon",    english: "while"},
+    {id: "li_8",  oravia: "lidastor", english: "year"},
+    {id: "li_3",  oravia: "lili",     english: "again"},
+    {id: "li_7",  oravia: "liperi",   english: "week"},
+    {id: "li_2",  oravia: "limel",    english: "evening"},
+    {id: "li_5",  oravia: "liyar",    english: "morning"},
     ];
 
     function renderSelfAssessment() {
@@ -300,20 +265,10 @@ function initWarmup() {
             }
             const existing = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
             localStorage.setItem('wrong_ids', JSON.stringify([...new Set([...existing, ...missedWords.map(w => w.id)])]));
-            document.getElementById('missed-count').textContent = missedWords.length;
-            document.getElementById('self-assessment-section').style.display = 'none';
-            document.getElementById('matching-section').style.display = 'block';
-            if (typeof MatchingGame !== 'undefined') {
-                new MatchingGame('warmup-game-1', missedWords, 'warmup-1', null, []);
-                new MatchingGame('warmup-game-2', missedWords, 'warmup-2', null, []);
-            }
+            document.getElementById('practice-btn').style.display = 'none';
+            document.getElementById('practice-btn').insertAdjacentHTML('afterend', '<p id="added-msg" style="color:#43a047; font-size:1rem; margin-top:1rem;">✓ Added to your Review tab!</p>');
         });
     }
-    const backBtn = document.getElementById('back-to-assessment-btn');
-    if (backBtn) backBtn.addEventListener('click', function() {
-        document.getElementById('matching-section').style.display = 'none';
-        document.getElementById('self-assessment-section').style.display = 'block';
-    });
     renderSelfAssessment();
 }
 if (document.readyState === 'loading') {
@@ -325,69 +280,59 @@ if (document.readyState === 'loading') {
 
 
 <script>
-async function initReview() {
+document.addEventListener('DOMContentLoaded', function() {
     const wrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
     const container = document.getElementById('review-game-container');
-    if (!container) return;
+    
     if (wrongIds.length === 0) {
         container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p><p style="color: #5a8bb8; margin-top: 0.5rem;">You did not miss any words. Excellent work!</p></div>';
         return;
     }
-    try {
-        const lessonIds = [...new Set(
-            [...document.querySelectorAll('[data-lesson]')]
-                .map(el => el.dataset.lesson)
-        )];
-        const baseUrl = window.location.origin;
-        const responses = await Promise.all(
-            lessonIds.map(id => fetch(baseUrl + '/data/' + id + '_words.json').then(r => r.json()))
-        );
-        const allWords = responses.flatMap(data => data.words);
-        const seen = new Set();
-        const uniqueWords = allWords.filter(w => {
-            if (seen.has(w.id)) return false;
-            seen.add(w.id);
-            return true;
-        });
-        const wrongWords = uniqueWords.filter(word => wrongIds.includes(word.id));
+
+    const baseUrl = window.location.origin;
+    
+    Promise.all([
+        fetch(baseUrl + '/data/lesson10_words.json').then(r => r.json()),
+        fetch(baseUrl + '/data/lesson09_words.json').then(r => r.json())
+    ])
+    .then(results => {
+        const allWords = [...results[0].words, ...results[1].words];
+        const wrongWords = allWords.filter(word => wrongIds.includes(word.id));
+        
         if (wrongWords.length === 0) {
             container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p></div>';
             return;
         }
+
         container.innerHTML = '<p style="text-align: center; margin-bottom: 2rem; color: #5a8bb8;">Practice these ' + wrongWords.length + ' word(s) you found challenging:</p><div id="review-game-wrapper"></div><div style="text-align: center; margin-top: 2rem;"><button id="clear-review" style="padding: 0.5rem 1.5rem; background: #f57c00; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">Clear Review List</button></div>';
+
         new MatchingGame('review-game-wrapper', wrongWords, 'review', null, []);
+
         document.getElementById('clear-review').addEventListener('click', function() {
             if (confirm('Clear all review words? This will reset your wrong words list for this lesson.')) {
                 const allWrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
-                const lessonWordIds = uniqueWords.map(w => w.id);
+                const lessonWordIds = allWords.map(w => w.id);
                 const remainingWrongIds = allWrongIds.filter(id => !lessonWordIds.includes(id));
                 localStorage.setItem('wrong_ids', JSON.stringify(remainingWrongIds));
                 location.reload();
             }
         });
-    } catch (error) {
+    })
+    .catch(error => {
         console.error('Error loading words:', error);
         container.innerHTML = '<p style="color: #f44336;">Error loading review words. Please refresh the page.</p>';
-    }
-}
-document.addEventListener('DOMContentLoaded', initReview);
-document.querySelectorAll('.tabbed-labels label').forEach(label => {
-    if (label.textContent.trim() === 'Review') {
-        label.addEventListener('click', function() {
-            setTimeout(initReview, 50);
-        });
-    }
+    });
 });
 </script>
 
 <div style="text-align: center; padding: 2rem 0; background: #e0f2f1; border-radius: 8px; margin-top: 3rem;">
     <p style="font-size: 1.2rem; color: #4a9cd6; margin-bottom: 1rem;">
-        🎉 <strong>Lesson 27 Complete!</strong>
+        🎉 <strong>Lesson 23 Complete!</strong>
     </p>
     <p style="color: #5a8bb8; margin-bottom: 0.5rem;">
         If you missed any words, check the <strong>Review</strong> tab to practice them again.
     </p>
     <p style="color: #5a8bb8; margin-bottom: 1.5rem;">
-        Come back tomorrow for Lesson 28.
+        Come back tomorrow for Lesson 24.
     </p>
 </div>

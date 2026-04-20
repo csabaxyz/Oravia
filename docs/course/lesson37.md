@@ -19,22 +19,6 @@
     
     </div>
     
-    <div id="matching-section" style="display: none; margin-top: 3rem;">
-    
-    <h3>Practice Missed Words</h3>
-    <p style="color: #5a8bb8;">Let's practice the <span id="missed-count"></span> word(s) you're still learning. Give it a try!</p>
-    
-    <div id="warmup-game-1"></div>
-    
-    <div style="margin-top: 2rem;">
-    <div id="warmup-game-2"></div>
-    </div>
-    
-    <div style="text-align: center; margin-top: 2rem;">
-        <button id="back-to-assessment-btn" style="background: #757575; color: white; border: none; padding: 0.5rem 1.5rem; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">↩ Back to Assessment</button>
-    </div>
-    
-    </div>
     
 === "Grammar"
 
@@ -55,7 +39,7 @@
     ```
     
     ```
-    Hay i vardei e elihei en bosvi boelo. I nomie no toului.
+    Hay i vardei e elihei en bosvi boelori. I nomie no toului.
     ```
     
     ```
@@ -150,6 +134,9 @@
     More, please.
     ```
    
+    !!! info "🌍 Fun Fact"
+        Liu comes from Latin alius (other).
+        
     Now try to write 3 sentences using **NE** words.
     
     <textarea style="width: 100%; min-height: 80px; padding: 1rem; border: 2px solid #4a9cd6; border-radius: 8px; font-family: inherit;" placeholder="Write your sentences in Oravia here..."></textarea>
@@ -162,108 +149,69 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
+
     ### Round 1
+
     <div id="matching-game-1" data-lesson="lesson36_b" data-round="1"></div>
 
     ---
 
     ### Round 2
+
     <div id="matching-game-2" data-lesson="lesson36_b" data-round="2"></div>
 
     ---
 
     ### Round 3
+
     <div id="matching-game-3" data-lesson="lesson36_b" data-round="3"></div>
 
-    ---
-
-    ### Round 4
-    <div id="matching-game-4" data-lesson="lesson36_b" data-round="4"></div>
-
-    ---
-
-    ### Round 5
-    <div id="matching-game-5" data-lesson="lesson36_b" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-6" data-lesson="lesson36_b" data-round="6"></div>
-
-    ---
-
-    ### Round 7
-    <div id="matching-game-7" data-lesson="lesson36_b" data-round="7"></div>
-
-    ---
-
-    ### Round 8
-    <div id="matching-game-8" data-lesson="lesson36_b" data-round="8"></div>
-
-    ---
-
-    ### Round 9
-    <div id="matching-game-9" data-lesson="lesson36_b" data-round="9"></div>
 
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
+
     ### Round 1
-    <div id="matching-game-10" data-lesson="lesson34_exercise2" data-round="1"></div>
+
+    <div id="matching-game-4" data-lesson="lesson34_exercise2" data-round="1"></div>
 
     ---
 
     ### Round 2
-    <div id="matching-game-11" data-lesson="lesson34_exercise2" data-round="2"></div>
+
+    <div id="matching-game-5" data-lesson="lesson34_exercise2" data-round="2"></div>
 
     ---
 
     ### Round 3
-    <div id="matching-game-12" data-lesson="lesson34_exercise2" data-round="3"></div>
+
+    <div id="matching-game-6" data-lesson="lesson34_exercise2" data-round="3"></div>
 
     ---
 
     ### Round 4
-    <div id="matching-game-13" data-lesson="lesson34_exercise2" data-round="4"></div>
 
-    ---
+    <div id="matching-game-7" data-lesson="lesson34_exercise2" data-round="4"></div>
 
-    ### Round 5
-    <div id="matching-game-14" data-lesson="lesson34_exercise2" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-15" data-lesson="lesson34_exercise2" data-round="6"></div>
-
-    ---
-
-    ### Round 7
-    <div id="matching-game-16" data-lesson="lesson34_exercise2" data-round="7"></div>
-
-    ---
-
-    ### Round 8
-    <div id="matching-game-17" data-lesson="lesson34_exercise2" data-round="8"></div>
 
 
 === "Review"
@@ -277,13 +225,14 @@
 
 <script>
 function initWarmup() {
-    const warmupWords = [
-    {id: "to_h3", oravia: "tohdin", english: "sorry"},
-    {id: "to_h4", oravia: "toharou", english: "anxious"},
-    {id: "to_h5", oravia: "tohbian", english: "confused"},
-    {id: "to_h6", oravia: "tohvor", english: "fear"},
-    {id: "to_u3", oravia: "toumo", english: "hungry"},
-    {id: "to_u4", oravia: "tourou", english: "tense"},
+        const warmupWords = [
+    {id: "to_7", oravia: "tohnaru", english: "anger"},
+    {id: "to_4", oravia: "toului",  english: "tired"},
+    {id: "to_6", oravia: "tohdin",  english: "sorry"},
+    {id: "to_2", oravia: "tovei",   english: "illness"},
+    {id: "to_5", oravia: "tohpu",   english: "sad"},
+    {id: "to_1", oravia: "towa",    english: "thirst"},
+    {id: "to_3", oravia: "toumo",   english: "hungry"},
     ];
 
     function renderSelfAssessment() {
@@ -320,20 +269,10 @@ function initWarmup() {
             }
             const existing = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
             localStorage.setItem('wrong_ids', JSON.stringify([...new Set([...existing, ...missedWords.map(w => w.id)])]));
-            document.getElementById('missed-count').textContent = missedWords.length;
-            document.getElementById('self-assessment-section').style.display = 'none';
-            document.getElementById('matching-section').style.display = 'block';
-            if (typeof MatchingGame !== 'undefined') {
-                new MatchingGame('warmup-game-1', missedWords, 'warmup-1', null, []);
-                new MatchingGame('warmup-game-2', missedWords, 'warmup-2', null, []);
-            }
+            document.getElementById('practice-btn').style.display = 'none';
+            document.getElementById('practice-btn').insertAdjacentHTML('afterend', '<p id="added-msg" style="color:#43a047; font-size:1rem; margin-top:1rem;">✓ Added to your Review tab!</p>');
         });
     }
-    const backBtn = document.getElementById('back-to-assessment-btn');
-    if (backBtn) backBtn.addEventListener('click', function() {
-        document.getElementById('matching-section').style.display = 'none';
-        document.getElementById('self-assessment-section').style.display = 'block';
-    });
     renderSelfAssessment();
 }
 if (document.readyState === 'loading') {

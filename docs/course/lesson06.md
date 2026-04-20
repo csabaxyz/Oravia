@@ -8,7 +8,7 @@
 ---
 
 === "Grammar"
-
+    
     ## Questions
     
     Today we will learn how to ask questions! The first type of question, *yes/no*, is very easy. We just change the intonation to that of a question:
@@ -44,6 +44,13 @@
     ```
     
     If he is drinking milk, one may reply something like *moulu*, *e moulu*, *i mouje moulu*, or *hay i mouje e moulu*.
+    
+    Notice that sometimes you may want to specify whther you are asking about who is doing something, or who something is being done to. In that case, you use the marker before the questions, like this:
+    
+    ```
+    e ce i mouje? = what is being drunk?
+    a ce i mouje? = what is doing the drinking?  
+    ```
     
     *Ei* means person. If you want to know **who** is drinking milk, we ask **cei**, or *what (ce) + person (ei)*
     
@@ -91,6 +98,10 @@
     
     Take to take a deeper look into our third cluster, BO! Take a look at these words.
     
+    <audio controls style="width:100%">
+      <source src="../audio/6v1.mp3" type="audio/wav">
+    </audio>
+    
     | Oravia | English |
     |--------|---------|
     | bortal | door |
@@ -126,9 +137,13 @@
   
     Let's take a look at another table. 
     
+    <audio controls style="width:100%">
+      <source src="../audio/6v2.mp3" type="audio/wav">
+    </audio>
+    
     | Oravia | English |
     |--------|---------|
-    | boelo | room |
+    | boelori | room |
     | boetale | hall |
     | boemo | kitchen |
     | bonjae | cabinet |
@@ -160,6 +175,13 @@
         <p style="margin: 0;">*BON* is used for <strong>furniture</strong>.</p>
     </div>
     
+    !!! info "🌍 Fun Fact"
+        Tal means "door", coming from Persian طاق ṭāq (arch, doorway) and Hindi ताला tālā (lock, door mechanism).  
+        
+        Lu means "outside", coming from Latin lux (light, sky phenomenon); Italian luce; French lumière; Portuguese/Spanish luz; and Proto-Indo-European *lewk- (to shine).  
+        
+        Vi is for "internal body", like Latin viscera.  
+    
     Great job!
             
     In sum, in the BO cluster (house), we have:
@@ -189,99 +211,83 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
-    
+
     ### Round 1
-    
+
     <div id="matching-game-1" data-lesson="lesson06" data-round="1"></div>
-    
+
     ---
-    
+
     ### Round 2
-    
+
     <div id="matching-game-2" data-lesson="lesson06" data-round="2"></div>
-    
+
     ---
-    
+
     ### Round 3
-    
+
     <div id="matching-game-3" data-lesson="lesson06" data-round="3"></div>
-        
+
     ---
-    
+
     ### Round 4
-    
+
     <div id="matching-game-4" data-lesson="lesson06" data-round="4"></div>
-        
-    ---
-    
-    ### Round 5
-    
-    <div id="matching-game-5" data-lesson="lesson06" data-round="5"></div>
+
+
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
-    
+
     ### Round 1
-    
-    <div id="matching-game-6" data-lesson="lesson06_exercise2" data-round="1"></div>
-    
+
+    <div id="matching-game-5" data-lesson="lesson06_exercise2" data-round="1"></div>
+
     ---
-    
+
     ### Round 2
-    
-    <div id="matching-game-7" data-lesson="lesson06_exercise2" data-round="2"></div>
-    
+
+    <div id="matching-game-6" data-lesson="lesson06_exercise2" data-round="2"></div>
+
     ---
-    
+
     ### Round 3
-    
-    <div id="matching-game-8" data-lesson="lesson06_exercise2" data-round="3"></div>
-     
+
+    <div id="matching-game-7" data-lesson="lesson06_exercise2" data-round="3"></div>
+
     ---
-    
+
     ### Round 4
-    
-    <div id="matching-game-9" data-lesson="lesson06_exercise2" data-round="4"></div>
-     
+
+    <div id="matching-game-8" data-lesson="lesson06_exercise2" data-round="4"></div>
+
     ---
-    
+
     ### Round 5
-    
-    <div id="matching-game-10" data-lesson="lesson06_exercise2" data-round="5"></div>
-     
-    ---
-    
-    ### Round 6
-    
-    <div id="matching-game-11" data-lesson="lesson06_exercise2" data-round="6"></div>
-    
-    ---
-    
-    ### Round 7
-    
-    <div id="matching-game-12" data-lesson="lesson06_exercise2" data-round="7"></div>
-    
-    
-    
+
+    <div id="matching-game-9" data-lesson="lesson06_exercise2" data-round="5"></div>
+
+
+
 === "Review"
 
     ## Review Missed Words
@@ -312,44 +318,33 @@ async function initReview() {
     const wrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
     const container = document.getElementById('review-game-container');
     if (!container) return;
-
     if (wrongIds.length === 0) {
         container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p><p style="color: #5a8bb8; margin-top: 0.5rem;">You did not miss any words. Excellent work!</p></div>';
         return;
     }
-
     try {
-        // Automatically detect all JSON files used on this page
         const lessonIds = [...new Set(
             [...document.querySelectorAll('[data-lesson]')]
                 .map(el => el.dataset.lesson)
         )];
-        
         const baseUrl = window.location.origin;
         const responses = await Promise.all(
             lessonIds.map(id => fetch(baseUrl + '/data/' + id + '_words.json').then(r => r.json()))
         );
         const allWords = responses.flatMap(data => data.words);
-
-        // Deduplicate by id
         const seen = new Set();
         const uniqueWords = allWords.filter(w => {
             if (seen.has(w.id)) return false;
             seen.add(w.id);
             return true;
         });
-
         const wrongWords = uniqueWords.filter(word => wrongIds.includes(word.id));
-
         if (wrongWords.length === 0) {
             container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p></div>';
             return;
         }
-
         container.innerHTML = '<p style="text-align: center; margin-bottom: 2rem; color: #5a8bb8;">Practice these ' + wrongWords.length + ' word(s) you found challenging:</p><div id="review-game-wrapper"></div><div style="text-align: center; margin-top: 2rem;"><button id="clear-review" style="padding: 0.5rem 1.5rem; background: #f57c00; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">Clear Review List</button></div>';
-
         new MatchingGame('review-game-wrapper', wrongWords, 'review', null, []);
-
         document.getElementById('clear-review').addEventListener('click', function() {
             if (confirm('Clear all review words? This will reset your wrong words list for this lesson.')) {
                 const allWrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
@@ -359,13 +354,11 @@ async function initReview() {
                 location.reload();
             }
         });
-
     } catch (error) {
         console.error('Error loading words:', error);
         container.innerHTML = '<p style="color: #f44336;">Error loading review words. Please refresh the page.</p>';
     }
 }
-
 document.addEventListener('DOMContentLoaded', initReview);
 document.querySelectorAll('.tabbed-labels label').forEach(label => {
     if (label.textContent.trim() === 'Review') {

@@ -129,8 +129,7 @@
     <div id="subcluster-answer" style="display: none; background: #c8e6c9; padding: 1.5rem; border-left: 4px solid #43a047; border-radius: 4px; margin: 2rem 0;">
     <p style="margin: 0;"> <strong>VON</strong> is for <strong>external body surfaces</strong> and <strong>VOS</strong> is for <strong>grooming</strong>.</p>
     </div>
-    
-    
+        
     Ce yo rune vonlu, vonyas, su vardei? 
     
     <textarea style="width: 100%; min-height: 80px; padding: 1rem; border: 2px solid #4a9cd6; border-radius: 8px; font-family: inherit;" placeholder="Write your sentences in Oravia here..."></textarea>
@@ -162,88 +161,69 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
+
     ### Round 1
+
     <div id="matching-game-1" data-lesson="lesson40" data-round="1"></div>
 
     ---
 
     ### Round 2
+
     <div id="matching-game-2" data-lesson="lesson40" data-round="2"></div>
 
     ---
 
     ### Round 3
+
     <div id="matching-game-3" data-lesson="lesson40" data-round="3"></div>
 
-    ---
-
-    ### Round 4
-    <div id="matching-game-4" data-lesson="lesson40" data-round="4"></div>
 
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
+
     ### Round 1
-    <div id="matching-game-5" data-lesson="lesson38_exercise2" data-round="1"></div>
+
+    <div id="matching-game-4" data-lesson="lesson38_exercise2" data-round="1"></div>
 
     ---
 
     ### Round 2
-    <div id="matching-game-6" data-lesson="lesson38_exercise2" data-round="2"></div>
+
+    <div id="matching-game-5" data-lesson="lesson38_exercise2" data-round="2"></div>
 
     ---
 
     ### Round 3
-    <div id="matching-game-7" data-lesson="lesson38_exercise2" data-round="3"></div>
+
+    <div id="matching-game-6" data-lesson="lesson38_exercise2" data-round="3"></div>
 
     ---
 
     ### Round 4
-    <div id="matching-game-8" data-lesson="lesson38_exercise2" data-round="4"></div>
 
-    ---
+    <div id="matching-game-7" data-lesson="lesson38_exercise2" data-round="4"></div>
 
-    ### Round 5
-    <div id="matching-game-9" data-lesson="lesson38_exercise2" data-round="5"></div>
-
-    ---
-
-    ### Round 6
-    <div id="matching-game-10" data-lesson="lesson38_exercise2" data-round="6"></div>
-
-    ---
-
-    ### Round 7
-    <div id="matching-game-11" data-lesson="lesson38_exercise2" data-round="7"></div>
-
-    ---
-
-    ### Round 8
-    <div id="matching-game-12" data-lesson="lesson38_exercise2" data-round="8"></div>
-
-    ---
-
-    ### Round 9
-    <div id="matching-game-13" data-lesson="lesson38_exercise2" data-round="9"></div>
 
 
 === "Review"
@@ -257,15 +237,12 @@
 
 <script>
 function initWarmup() {
-    const warmupWords = [
-    {id: "apa_m1", oravia: "apasoi", english: "hurry"},
-    {id: "apa_m2", oravia: "apanou", english: "drop"},
-    {id: "apa_m3", oravia: "aparih", english: "jump"},
-    {id: "apa_m4", oravia: "apahela", english: "throw"},
-    {id: "apa_s1", oravia: "apaleno", english: "dig"},
-    {id: "apa_s2", oravia: "apavu", english: "run"},
-    {id: "apa_s3", oravia: "apafene", english: "sit"},
-    {id: "apa_s4", oravia: "apani", english: "pull"},
+        const warmupWords = [
+    {id: "apa_1", oravia: "apasoi",  english: "hurry"},
+    {id: "apa_2", oravia: "apanou",  english: "drop"},
+    {id: "apa_3", oravia: "aparih",  english: "jump"},
+    {id: "apa_4", oravia: "apavu",   english: "run"},
+    {id: "apa_5", oravia: "apafene", english: "sit"},
     ];
 
     function renderSelfAssessment() {

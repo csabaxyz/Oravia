@@ -110,6 +110,10 @@
     
     **Remember, do not try to memorize them.** Just read it through attentively.
     
+    <audio controls style="width:100%">
+      <source src="../audio/4v.mp3" type="audio/wav">
+    </audio>
+    
     
     | Oravia | English |
     |--------|---------|
@@ -154,6 +158,11 @@
     | fare | parent |
     | fano | daughter, son |
     
+    !!! info "🌍 Fun Fact"
+        Fano uses the no(u) root, which means low, falling. It comes from Arabic نَوْم naw  (sleep, falling into sleep). We use it  because daughters and sons are one generation below! 
+        
+        The root ni in Falni (baby) comes from the Proto-Indo-European root newo, which shares Greek νέος neos (young, fresh, recent), and English new.
+    
     You're ready for the exercise now!
     
     ---
@@ -161,81 +170,83 @@
 === "Exercise 1"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     ---
-    
+
     ### Round 1
-    
+
     <div id="matching-game-1" data-lesson="lesson04" data-round="1"></div>
-    
+
     ---
-    
+
     ### Round 2
-    
+
     <div id="matching-game-2" data-lesson="lesson04" data-round="2"></div>
-    
+
     ---
-    
+
     ### Round 3
-    
+
     <div id="matching-game-3" data-lesson="lesson04" data-round="3"></div>
+
+    ---
+
+    ### Round 4
+
+    <div id="matching-game-4" data-lesson="lesson04" data-round="4"></div>
+
+
 
 === "Exercise 2"
 
     ## Matching Games
-    
+
     Time to practice! Match the Oravia words with their English meanings.
-    
+
     **If you don't remember or make a mistake, that's totally fine!** We will have plenty of opportunities to practice. Right now just give it a try.
-    
+
     Click one word from each column to match them. The game will check automatically when you select both words.
-    
+
     After completing the Exercises and Review, try it again to see how much you've improved.
-    
+
     ---
-    
+
     ### Round 1
-    
-    <div id="matching-game-4" data-lesson="lesson04_exercise2" data-round="1"></div>
-    
+
+    <div id="matching-game-5" data-lesson="lesson04_exercise2" data-round="1"></div>
+
     ---
-    
+
     ### Round 2
-    
-    <div id="matching-game-5" data-lesson="lesson04_exercise2" data-round="2"></div>
-    
+
+    <div id="matching-game-6" data-lesson="lesson04_exercise2" data-round="2"></div>
+
     ---
-    
+
     ### Round 3
-    
-    <div id="matching-game-6" data-lesson="lesson04_exercise2" data-round="3"></div>
-     
+
+    <div id="matching-game-7" data-lesson="lesson04_exercise2" data-round="3"></div>
+
     ---
-    
+
     ### Round 4
-    
-    <div id="matching-game-7" data-lesson="lesson04_exercise2" data-round="4"></div>
-     
+
+    <div id="matching-game-8" data-lesson="lesson04_exercise2" data-round="4"></div>
+
     ---
-    
+
     ### Round 5
-    
-    <div id="matching-game-8" data-lesson="lesson04_exercise2" data-round="5"></div>
-     
-    ---
-    
-    ### Round 6
-    
-    <div id="matching-game-9" data-lesson="lesson04_exercise2" data-round="6"></div>
-    
-    
-    
+
+    <div id="matching-game-9" data-lesson="lesson04_exercise2" data-round="5"></div>
+
+
+
 === "Review"
 
     ## Review Missed Words
@@ -266,44 +277,33 @@ async function initReview() {
     const wrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
     const container = document.getElementById('review-game-container');
     if (!container) return;
-
     if (wrongIds.length === 0) {
         container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p><p style="color: #5a8bb8; margin-top: 0.5rem;">You did not miss any words. Excellent work!</p></div>';
         return;
     }
-
     try {
-        // Automatically detect all JSON files used on this page
         const lessonIds = [...new Set(
             [...document.querySelectorAll('[data-lesson]')]
                 .map(el => el.dataset.lesson)
         )];
-        
         const baseUrl = window.location.origin;
         const responses = await Promise.all(
             lessonIds.map(id => fetch(baseUrl + '/data/' + id + '_words.json').then(r => r.json()))
         );
         const allWords = responses.flatMap(data => data.words);
-
-        // Deduplicate by id
         const seen = new Set();
         const uniqueWords = allWords.filter(w => {
             if (seen.has(w.id)) return false;
             seen.add(w.id);
             return true;
         });
-
         const wrongWords = uniqueWords.filter(word => wrongIds.includes(word.id));
-
         if (wrongWords.length === 0) {
             container.innerHTML = '<div style="text-align: center; padding: 3rem; background: #e0f2f1; border-radius: 8px;"><p style="font-size: 1.2rem; color: #4a9cd6; margin: 0;">🎉 No words to review!</p></div>';
             return;
         }
-
         container.innerHTML = '<p style="text-align: center; margin-bottom: 2rem; color: #5a8bb8;">Practice these ' + wrongWords.length + ' word(s) you found challenging:</p><div id="review-game-wrapper"></div><div style="text-align: center; margin-top: 2rem;"><button id="clear-review" style="padding: 0.5rem 1.5rem; background: #f57c00; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.95rem;">Clear Review List</button></div>';
-
         new MatchingGame('review-game-wrapper', wrongWords, 'review', null, []);
-
         document.getElementById('clear-review').addEventListener('click', function() {
             if (confirm('Clear all review words? This will reset your wrong words list for this lesson.')) {
                 const allWrongIds = JSON.parse(localStorage.getItem('wrong_ids') || '[]');
@@ -313,13 +313,11 @@ async function initReview() {
                 location.reload();
             }
         });
-
     } catch (error) {
         console.error('Error loading words:', error);
         container.innerHTML = '<p style="color: #f44336;">Error loading review words. Please refresh the page.</p>';
     }
 }
-
 document.addEventListener('DOMContentLoaded', initReview);
 document.querySelectorAll('.tabbed-labels label').forEach(label => {
     if (label.textContent.trim() === 'Review') {
